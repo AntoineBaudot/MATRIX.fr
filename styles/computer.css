@@ -1,17 +1,11 @@
 
-html, body {
-
-    height: 100%;
-}
-
+html {height:100%;}
 #tele{
-    height:100% ;
-    background: url('../src/salle-tv-éteint.jpg');
-    background-position: center center;
-    background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
- 
+    height: 100%;
+    background: url('../src/salle-tv-éteint.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    
 }
 
 #tv1 {
