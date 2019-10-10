@@ -110,7 +110,7 @@ for (let i = 0; i < modal_close.length; i++) {
         modal_making_of.style.visibility = 'hidden';
         modal_mentions.style.visibility = 'hidden';
         var myPlayer = document.getElementById("youtube-player-id");
-        myPlayer.setAttribute("src", "https://www.youtube.com/embed/Kjcv-JtUOgA ");
+        myPlayer.setAttribute("src", "https://www.youtube.com/embed/cvEKvJGTzeU ");
     })
 }
 
