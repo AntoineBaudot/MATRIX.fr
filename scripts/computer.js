@@ -61,6 +61,8 @@ tvAbout.addEventListener("mouseover", function (event) {
 tvAbout.addEventListener("mouseout", function (event) {
     document.getElementById("background_menu").style.backgroundImage = "url(images/salle-tv-éteint.jpg)";
 })
+
+
 tvMakingOf.addEventListener("mouseover", function (event) {
     document.getElementById("background_menu").style.backgroundImage = "url(images/salle-tv-making-of.jpg)";
 })
@@ -79,4 +81,16 @@ tvMentionLegal.addEventListener("mouseover", function (event) {
 tvMentionLegal.addEventListener("mouseout", function (event) {
     document.getElementById("background_menu").style.backgroundImage = "url(images/salle-tv-éteint.jpg)";
 })
+
+
+
+
+
+tvAbout = document.getElementById('tvAbout');
+
+tvAbout.addEventListener('click', function (e) {
+    document.getElementById('modal_about').style.visibility = 'visible';
+})
+
+
 
