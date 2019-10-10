@@ -1,4 +1,3 @@
-
 var lScreen = window.innerWidth;
 var hScreen = window.innerHeight;
 
@@ -91,6 +90,8 @@ modal_poster = document.getElementById('modal_poster');
 modal_close = document.querySelectorAll('.modal_close');
 tvMakingOf = document.getElementById('tvMakingOf');
 modal_making_of = document.getElementById('modal_making_of');
+tvMentions = document.getElementById('tvMentionLegal');
+modal_mentions = document.getElementById('modal_mentions');
 
 tvPoster.addEventListener('click', function (e) {
     modal_poster.style.visibility = 'visible';
@@ -98,22 +99,18 @@ tvPoster.addEventListener('click', function (e) {
 tvMakingOf.addEventListener('click', function (e) {
     modal_making_of.style.visibility = 'visible';
 })
+tvMentions.addEventListener('click', function (e) {
+    modal_mentions.style.visibility = 'visible';
+})
 
 
 for (let i = 0; i < modal_close.length; i++) {
     modal_close[i].addEventListener('click', function (e) {
         modal_poster.style.visibility = 'hidden';
         modal_making_of.style.visibility = 'hidden';
+        modal_mentions.style.visibility = 'hidden';
         var myPlayer = document.getElementById("youtube-player-id");
         myPlayer.setAttribute("src", "https://www.youtube.com/embed/Kjcv-JtUOgA ");
     })
 }
-
-
-
-
-
-
-
-
 
