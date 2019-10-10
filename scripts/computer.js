@@ -1,11 +1,14 @@
-/*document.getElementId("tele").addEventListener("mouseover", function () {
-    document.getElementById('tele').style.backgroundImage = "url(../src/salle-tv-acceuil.jpg)";
+/*document.getElementId("body").addEventListener("mouseover", function () {
+    document.getElementById('body').style.backgroundImage = "url(../src/salle-tv-acceuil.jpg)";
 }, false);
-document.getElementById('tele').addEventListener("mouseout", function () {
-    document.getElementById(tele).style.backgroundImage = "url(..src/salle-tv-éteint.jpg)";
+document.getElementById('body').addEventListener("mouseout", function () {
+    document.getElementById(body).style.backgroundImage = "url(..src/salle-tv-éteint.jpg)";
 }, false);
 
 */
+
+
+
 /*
 let images = new Array()
 function preload() {
@@ -23,72 +26,65 @@ preload(
     "../src/salle-tv-about.jpg",
     "../src/salle-tv-galerie.jpg",
 )
+
+
+*/
+
+var lScreen = window.innerWidth;
+var hScreen = window.innerHeight;
+
+
+/*
+let bcg_menu = document.getElementById("background_menu")
+let body = document.getElementById("body")
+body.style.width = lScreen + 'px';
+body.style.height = hScreen + 'px';
+bcg_menu.style.width = lScreen + 'px';
+bcg_menu.style.height = hScreen + 'px';
+bcg_menu.style.background = "url(../src/salle-tv-éteint.jpg)";
 */
 
 
-let tv1 = document.getElementById("tv1")
-let tele = document.getElementById("tele")
 
 
-tv1.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-accueil.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+
+
+
+tvAcceuil.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-accueil.jpg)";
 })
-tv1.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvAcceuil.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
 
-tv2.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-poster.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvPoster.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-poster.jpg)";
 })
-tv2.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvPoster.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
 
-tv3.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-video.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvVideo.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-video.jpg)";
 })
-tv3.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvVideo.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
-tv4.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-about.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvAbout.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-about.jpg)";
 })
-tv4.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvAbout.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
-tv5.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-making-of.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvMakingOf.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-making-of.jpg)";
 })
-tv5.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvMakingOf.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
-tv6.addEventListener("mouseover", function (event) {
-    tele.style.background = "url(../src/salle-tv-galerie.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvGalerie.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-galerie.jpg)";
 })
-tv6.addEventListener("mouseout", function (event) {
-    tele.style.background = "url(../src/salle-tv-éteint.jpg)";
-    tele.style.backgroundSize = "cover";
-    tele.style.backgroundRepeat = "no-repeat";
+tvGalerie.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })

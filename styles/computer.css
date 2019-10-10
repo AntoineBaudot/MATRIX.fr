@@ -1,60 +1,73 @@
 
-html{
-    height:100%;
+html, body {margin: 0; padding:0;height: 100%}
+body {
     
+    background-image: url("../images/salle-tv-éteint.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#tele{
+#background_menu {
     height: 100%;
-    background: url('../src/salle-tv-éteint.jpg') no-repeat;
+  
+    background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    
 }
 
-#tv1 {
+#background_menu a {
+    display: block;
     
+    height: 100%;
+}
+
+#tvAcceuil {
     position: absolute;
     width: 18%;
     height: 20%;
-
+    
     top: 75%;
     left: 42%;
 }
-#tv2 {
+#tvPoster {
     position: absolute;
     width: 18%;
     height: 20%;
     top: 78%;
     left: 65%;
+    
 }
-#tv3 {
+#tvVideo {
     position: absolute;
     width: 22%;
     height: 25%;
     top: 28%;
     left: 35%;
+    
 }
 
-#tv4 {
+#tvAbout {
     position: absolute;
     width: 10%;
     height: 30%;
     top: 25%;
     left: 60%;
+    
 }
-#tv5 {
+#tvMakingOf{
     position: absolute;
     width: 14%;
     height: 25%;
     top: 28%;
     left: 19%;
+    
 
 }
-#tv6 {
+#tvGalerie{
     position: absolute;
     width: 17%;
     height: 35%;
     top: 22%;
     right: 10%;
+    
 
 }
