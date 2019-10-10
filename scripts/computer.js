@@ -86,11 +86,31 @@ tvMentionLegal.addEventListener("mouseout", function (event) {
 
 
 
-tvAbout = document.getElementById('tvAbout');
+tvPoster = document.getElementById('tvPoster');
+modal_poster = document.getElementById('modal_poster');
+modal_close = document.querySelectorAll('.modal_close');
+tvMakingOf = document.getElementById('tvMakingOf');
+modal_making_of = document.getElementById('modal_poster');
 
-tvAbout.addEventListener('click', function (e) {
-    document.getElementById('modal_about').style.visibility = 'visible';
+tvPoster.addEventListener('click', function (e) {
+    modal_poster.style.visibility = 'visible';
 })
+tvMakingOf.addEventListener('click', function (e) {
+    modal_making_of.style.visibility = 'visible';
+})
+
+
+for (let i = 0; i < modal_close.length; i++) {
+    modal_close[i].addEventListener('click', function (e) {
+        modal_poster.style.visibility = 'hidden';
+    })
+}
+
+
+
+
+
+
 
 
 
