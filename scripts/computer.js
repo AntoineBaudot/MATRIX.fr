@@ -1,34 +1,3 @@
-/*document.getElementId("body").addEventListener("mouseover", function () {
-    document.getElementById('body').style.backgroundImage = "url(../src/salle-tv-acceuil.jpg)";
-}, false);
-document.getElementById('body').addEventListener("mouseout", function () {
-    document.getElementById(body).style.backgroundImage = "url(..src/salle-tv-éteint.jpg)";
-}, false);
-
-*/
-
-
-
-/*
-let images = new Array()
-function preload() {
-    for (i = 0; i < preload.arguments.length; i++) {
-        images[i] = new Image()
-        images[i].src = preload.arguments[i]
-    }
-}
-preload(
-    "../src/salle-tv-accueil.jpg",
-    "../src/salle-tv-éteint.jpg",
-    "../src/salle-tv-poster.jpg",
-    "../src/salle-tv-video.jpg",
-    "../src/salle-tv-making-of.jpg",
-    "../src/salle-tv-about.jpg",
-    "../src/salle-tv-galerie.jpg",
-)
-
-
-*/
 
 var lScreen = window.innerWidth;
 var hScreen = window.innerHeight;
@@ -46,7 +15,23 @@ bcg_menu.style.background = "url(../src/salle-tv-éteint.jpg)";
 
 
 
-
+var picAcceuil = new Image();
+var picPoster = new Image();
+var picVideo = new Image();
+var picAbout = new Image();
+var picMakingOf = new Image();
+var picGalerie = new Image();
+var picVideo = new Image();
+var picEteint = new Image();
+var picMentionsLegals = new Image();
+picAcceuil.src = "../Matrix.fr/images/salle-tv-poster.jpg";
+picPoster.src = "../Matrix.fr/images/salle-tv-poster.jpg";
+picVideo.src = "../Matrix.fr/images/salle-tv-video.jpg";
+picAbout.src = "../Matrix.fr/images/salle-tv-about.jpg";
+picMakingOf.src = "../Matrix.fr/images/salle-tv-making-of.jpg";
+picGalerie.src = "../Matrix.fr/images/salle-tv-galerie.jpg";
+picEteint.src = "../Matrix.fr/images/salle-tv-éteint.jpg";
+picMentionsLegals.src = "../Matrix.fr/images/salle-tv-mentions-legales.jpg";
 
 
 
@@ -88,3 +73,10 @@ tvGalerie.addEventListener("mouseover", function (event) {
 tvGalerie.addEventListener("mouseout", function (event) {
     document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
 })
+tvMentionLegal.addEventListener("mouseover", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-mentions-legales.jpg)";
+})
+tvMentionLegal.addEventListener("mouseout", function (event) {
+    document.getElementById("background_menu").style.backgroundImage = "url(../Matrix.fr/images/salle-tv-éteint.jpg)";
+})
+
