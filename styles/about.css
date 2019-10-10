@@ -1,0 +1,32 @@
+@font-face{
+  font-family: "Unispace";
+  src: url("fonts/unispace.ttf") format("true type");
+}
+
+body{
+  font-family: "Unispace";
+  filter: none;
+  color: white;
+  background-image: url("../images/background_about.jpg");
+  size : 100%;
+}
+
+.title{
+  font-size: 1.1em;
+  width: 130px ;
+}
+
+.synop{
+  font-size: 0.4em;
+  width: 65%;
+}
+
+.Synopsis{
+  display: flex;
+
+}
+
+.RSP{
+  color: white;
+  font-size: 0.4em;
+}
