@@ -190,6 +190,3 @@ document.getElementById("inputBox").onkeyup = function (e) {
 
 //Exec
 inputUsername();
-
-
-

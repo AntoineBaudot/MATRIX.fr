@@ -1,36 +1,27 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <title>Matrix</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="robots" content="noindex">
-
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/shell.css">
-    </head>
+    <meta charset="utf-8">
+    <title>Matrix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="styles/shell.css">
 
     <body>
-        <main id="main_home">
-            <div id="modal_shell">
-
-                <div class="modal_contents_shell">
-                    <div class="shell_container">
-                        <div id="matrixType"></div>
-                        <div class="remplir">
-                            <p id="p1"></p>
-                            <label for="inputBox">~$ </label><input type="text" name="inputBox" id="inputBox">
-                        </div>
-
-                    </div>
-                </div>
+        <main>
+            <div>
+                <div id="matrixType"></div>
+                <p id="p1"></p>
+                <label for="inputBox">~$ </label><input type="text" name="inputBox" id="inputBox">
             </div>
-            <canvas id="matrixprint"></canvas>
+
         </main>
-        <script src="scripts/index.js"></script>
-        <script src="scripts/shell.js"></script>
+        <canvas id="matrixprint"></canvas>
+
+
     </body>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/shell.js"></script>
 
 </html>
