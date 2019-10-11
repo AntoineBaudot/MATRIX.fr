@@ -92,6 +92,8 @@ tvMakingOf = document.getElementById('tvMakingOf');
 modal_making_of = document.getElementById('modal_making_of');
 tvMentions = document.getElementById('tvMentionLegal');
 modal_mentions = document.getElementById('modal_mentions');
+tvGalerie = document.getElementById('tvGalerie');
+modal_galerie = document.getElementById('modal_galerie');
 
 tvPoster.addEventListener('click', function (e) {
     modal_poster.style.visibility = 'visible';
@@ -102,6 +104,10 @@ tvMakingOf.addEventListener('click', function (e) {
 tvMentions.addEventListener('click', function (e) {
     modal_mentions.style.visibility = 'visible';
 })
+tvGalerie.addEventListener('click', function (e) {
+    modal_galerie.style.visibility = 'visible';
+
+})
 
 
 for (let i = 0; i < modal_close.length; i++) {
@@ -109,6 +115,8 @@ for (let i = 0; i < modal_close.length; i++) {
         modal_poster.style.visibility = 'hidden';
         modal_making_of.style.visibility = 'hidden';
         modal_mentions.style.visibility = 'hidden';
+        modal_galerie.style.visibility = 'hidden';
+
         var myPlayer = document.getElementById("youtube-player-id");
         myPlayer.setAttribute("src", "https://www.youtube.com/embed/cvEKvJGTzeU ");
     })

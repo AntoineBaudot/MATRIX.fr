@@ -122,6 +122,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
     
 }
+#modal_galerie{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
 
 .modal_contents {
 
@@ -135,6 +148,7 @@ body {
     height: auto;
     margin : 0 auto;
 }
+
 .modal_close {
     cursor: pointer;
     color: white; 
@@ -211,3 +225,11 @@ iframe{
     text-align: center;
     color: white;
 }
+.galerie {
+    height: 100%;
+}
+
+
+
+/*SLIDER*/
+
