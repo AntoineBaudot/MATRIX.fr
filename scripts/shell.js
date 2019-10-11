@@ -104,7 +104,7 @@ function newLine(text) {
     var newContent = document.createTextNode(text);
     newP.appendChild(newContent);
     var currentP = document.getElementById('p1');
-    document.body.insertBefore(newP, currentP);
+    document.main.insertBefore(newP, currentP);
     window.scrollTo(0, y + 100);
     setTimeout(removeLine, 3000);
 }

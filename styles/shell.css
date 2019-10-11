@@ -1,22 +1,22 @@
-html, body {
-    margin: 0; padding: 0;position: relative; background-color: #000000; font-size: 16;
-}
 
+html, body{margin: 0;padding: 0; }
+body {
+    position: relative;
+    background-color: black;
+}
 main {
-    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    background-color: #000000;
     color: #ffffff;
     font-size: 14px;
     font-family: "Courier New", serif;
     font-weight: bold;
+    font-size: 18px;
+    
     width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    position: absolute;
-    
-}
-main div {
-    padding: 1%;
 }
 
 #pGen{
