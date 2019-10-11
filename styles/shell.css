@@ -9,7 +9,7 @@
     position: absolute;
     
     top: 0;
-    height: 100%;
+height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     display: flex;
@@ -32,4 +32,25 @@
     height: 80%;
     
     color: white;
+}
+input[type="text"] {
+    outline: none;
+    background: transparent;
+    font-family: "Courier New", serif;
+    color: white;
+    border: none;
+ 
+}
+label {
+    width: 3%;
+}
+#pGen{
+    color: #ffffff;
+    
+}
+#p1 {
+    width: 0;
+}
+.shell_container div {
+    display:flex;
 }
