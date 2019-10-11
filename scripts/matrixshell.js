@@ -13,6 +13,7 @@ var speed = 60;
 function inputUsername() {
     document.getElementById("matrixType").innerHTML = "Please enter your login :";
 }
+
 function nextMatrix() {
     if (nextMatrixComp === 0) {
         nextMatrixComp++;
@@ -41,14 +42,14 @@ function nextMatrix() {
         nextMatrixAnswer = 7;
         i = 0;
         text = [];
-        str = "All right, you found the white rabbit.<br>Don't expect him to lead you to us. You do not truly know someone, until you fight them.";
+        str = "All right, you found the white rabbit.<br>Don't expect him to lead you to us. You do not truly know someone, until you fight them.<br>QXJlIHlvdSByZWFkeSB0byBmaWdodA== ?";
         setTimeout(matrixType, 1);
     }
     else if (nextMatrixAnswer === 3) {
         nextMatrixAnswer = 8;
         i = 0;
         text = [];
-        str = "All right, if you're ready, you have one more choice to make.";
+        str = "All right, if you're ready, you have one more choice to make.<br>726564206f7220626c7565";
         setTimeout(matrixType, 1);
     }
     else if (nextMatrixAnswer === 4) {
@@ -95,7 +96,6 @@ function matrixType() {
 function resetInput() {
     document.getElementById("inputBox").value = "";
 }
-
 function newLine(text) {
     var y = window.scrollY;
     resetInput();
@@ -104,7 +104,7 @@ function newLine(text) {
     var newContent = document.createTextNode(text);
     newP.appendChild(newContent);
     var currentP = document.getElementById('p1');
-    document.body.insertBefore(newP, currentP);
+    document.getElementById("p1").insertBefore(newP, currentP);
     window.scrollTo(0, y + 100);
     setTimeout(removeLine, 3000);
 }
@@ -153,12 +153,12 @@ function interpreteCommands() {
             resetInput();
             nextMatrix();
             break;
-        case 'QXJlIHlvdSByZWFkeSB0byBmaWdodA== ?':
+        case 'yes':
             nextMatrixAnswer = 3;
             resetInput();
             nextMatrix();
             break;
-        case '726564206f7220626c7565':
+        case 'red':
             nextMatrixAnswer = 4;
             resetInput();
             nextMatrix();
