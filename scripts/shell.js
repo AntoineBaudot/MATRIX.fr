@@ -41,14 +41,14 @@ function nextMatrix() {
         nextMatrixAnswer = 7;
         i = 0;
         text = [];
-        str = "All right, you found the white rabbit.<br>Don't expect him to lead you to us. You do not truly know someone, until you fight them.";
+        str = "All right, you found the white rabbit.<br>Don't expect him to lead you to us. You do not truly know someone, until you fight them.<br>QXJlIHlvdSByZWFkeSB0byBmaWdodA== ?";
         setTimeout(matrixType, 1);
     }
     else if (nextMatrixAnswer === 3) {
         nextMatrixAnswer = 8;
         i = 0;
         text = [];
-        str = "All right, if you're ready, you have one more choice to make.";
+        str = "All right, if you're ready, you have one more choice to make.<br>726564206f7220626c7565";
         setTimeout(matrixType, 1);
     }
     else if (nextMatrixAnswer === 4) {
@@ -153,12 +153,12 @@ function interpreteCommands() {
             resetInput();
             nextMatrix();
             break;
-        case 'QXJlIHlvdSByZWFkeSB0byBmaWdodA== ?':
+        case 'yes':
             nextMatrixAnswer = 3;
             resetInput();
             nextMatrix();
             break;
-        case '726564206f7220626c7565':
+        case 'red':
             nextMatrixAnswer = 4;
             resetInput();
             nextMatrix();
