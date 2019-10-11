@@ -11,6 +11,7 @@
     top: 0;
     height: 100%;
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +29,7 @@
     background-color: black;
 }
 .shell_container {
-    height: 100%;
-    text-align: center;
+    height: 80%;
+    
     color: white;
 }
