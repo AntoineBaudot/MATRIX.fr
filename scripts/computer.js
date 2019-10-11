@@ -94,6 +94,12 @@ tvMentions = document.getElementById('tvMentionLegal');
 modal_mentions = document.getElementById('modal_mentions');
 tvGalerie = document.getElementById('tvGalerie');
 modal_galerie = document.getElementById('modal_galerie');
+tvAbout = document.getElementById('tvAbout');
+modal_about = document.getElementById('modal_about');
+tvAbout = document.getElementById('tvAbout');
+modal_about = document.getElementById('modal_about');
+tvVideo = document.getElementById('tvVideo');
+modal_video = document.getElementById('modal_video');
 
 tvPoster.addEventListener('click', function (e) {
     modal_poster.style.visibility = 'visible';
@@ -108,6 +114,14 @@ tvGalerie.addEventListener('click', function (e) {
     modal_galerie.style.visibility = 'visible';
 
 })
+tvAbout.addEventListener('click', function (e) {
+    modal_about.style.visibility = 'visible';
+
+})
+tvVideo.addEventListener('click', function (e) {
+    modal_video.style.visibility = 'visible';
+
+})
 
 
 for (let i = 0; i < modal_close.length; i++) {
@@ -116,6 +130,8 @@ for (let i = 0; i < modal_close.length; i++) {
         modal_making_of.style.visibility = 'hidden';
         modal_mentions.style.visibility = 'hidden';
         modal_galerie.style.visibility = 'hidden';
+        modal_about.style.visibility = 'hidden';
+        modal_video.style.visibility = 'hidden';
 
         var myPlayer = document.getElementById("youtube-player-id");
         myPlayer.setAttribute("src", "https://www.youtube.com/embed/cvEKvJGTzeU ");

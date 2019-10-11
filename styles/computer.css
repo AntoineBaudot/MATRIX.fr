@@ -1,4 +1,7 @@
-html, body {margin: 0; padding:0;height: 100%; width: 100%}
+html, body {margin: 0; padding:0;height: 100%; width: 100%; }
+p {
+    font-size : 16px;
+}
 body {
     
     background-image: url("../images/salle-tv-éteint.jpg");
@@ -109,6 +112,19 @@ body {
     font-family: 'Courier New', Courier, monospace;
     
 }
+#modal_video{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
 #modal_mentions{
     position: absolute;
     background-color: rgba(0, 0, 0, 0.8);
@@ -133,6 +149,20 @@ body {
     align-items: center;
     visibility: hidden;
     font-family: 'Courier New', Courier, monospace;
+    
+}
+#modal_about{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
     
 }
 
@@ -161,6 +191,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.about {
+    width: 100%;
 }
 /*
 .header_about h1 {
@@ -229,7 +262,53 @@ iframe{
     height: 100%;
 }
 
+.about_container_1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.about_synop {
+    width: 70%;
+}
+.about_real {
+    width: 30%;
+    text-align: end;
+}
 
+.acteurs_container {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.acteurs {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+.legende_acteurs {
+    padding-top: 1%;
+}
+.others_acteurs {
+    text-align: end;
+    widows: 70%;
+}
 
-/*SLIDER*/
+.acteurs_container2 {
+    display: flex;
+    justify-content: space-between;
+}
+.video {
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    
+}
+.video_container {
+    height: 100%;
+    width: 100%;
+    padding: 2%;
+    
+    
+}
 
